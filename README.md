@@ -1,31 +1,57 @@
-# Kub Hpda Ml 
-Author: Christophe Prud'homme ![GitHub](https://github.com/prudhomm)
-Version: v2
+# Ktirio Urban Building AI HPDA code 
 
-![CI](https://github.com/feelpp/hid-ai-hpda-ub/workflows/CI/badge.svg)
+## Setup Environment
+
+To start, you need to install the following tools:
+
+```
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+The previous commands will create a virtual environment and install the required packages including the hid-ai-hpda-ub package.
+Once the installation is done, you can start using the package or run the notebooks in `src/notebooks/`.
+
+## Visual Studio Code
+
+In order to use Visual Studio Code, you need to install the following extensions:
+
+* Python
+* CMake
+* Docker
+* Jupyter
+* AI Code
+
+We have configured `.vscode/extensions.json` to automatically install recommended extensions when you open the project in Visual Studio Code.
+
+## Feel++ Template Project 
 
 This repository provides a basic starting point for a Feel++ application including:
 
-- [x] Feel++ applications in C++ to use Feel++ and Feel++ toolboxes in `src`
-- [x] Documentation using asciidoc and antora
-- [x] Python Feel++ notebooks that can be downloaded from the documentation
-- [x] Continuous integration including tests for the C++ applications
-- [x] Docker image generation for the project
+* [x] Feel++ applications in C++ to use Feel++ and Feel++ toolboxes in `src`
+* [x] documentation using asciidoc and antora
+* [x] continuous integration including tests for the C++ applications
+* [x] docker image generation for the project
+* [x] notebooks are in src/notebooks
 
-The documentation for hid-ai-hpda-ub is available [here](https://feelpp.github.io/hid-ai-hpda-ub), and you can build on it for your project by enabling the [github pages](https://docs.github.com/en/pages) for your repository.
+The documentation for hid-ai-hpda-ub is available at [here](https://feelpp.github.io/hid-ai-hpda-ub) and you can build on it for your project by enabling the [github pages](https://docs.github.com/en/pages) for your repository.
 
-## Renaming the project
+## Updating the hid-ai-hpda-ub  version
 
-By default, the project is named `hid-ai-hpda-ub` if you cloned the repository `feelpp/hid-ai-hpda-ub`. However, if you used the previous repository as a template, then the project is renamed using the name of the repository using the script `rename.sh` at the initialization of the repository. If the name does not suit you, you can change it again using the script `rename.sh` and providing the new name as an argument.
-
-> **Warning**: The script `rename.sh` will rename the project. However, some URLs might not be set properly if you rename the project yourself. You need to check the following files: `docs/site.yml` and `docs/package.json` and fix the URLs after the rename process is done.
-
-## Updating the project version
-
-The version of the project is defined in the files `CMakeLists.txt`, `docs/antora.yml`, and `docs/package.json`. You need to update with the same version in all files.
+The version of the project is defined in the files `CMakeLists.txt`, `docs/antora.yml`, `pyproject.toml` and `package.json`. 
+You need to update with the same version in all files.
 
 ## Release process
 
-- [x] Update the version in `CMakeLists.txt`
-- [x] Update the version in `docs/antora.yml`
-- [x] Commit the changes with the message "Release vx.y.z". At this point, the CI will generate the docker image and push it to Docker Hub.
+* [x] update the version in CMakeLists.txt
+* [x] update the version in docs/antora.yml
+* [x] update the version in package.json
+* [x] commit the version in pyproject.toml
+* [x] commit the changes with the message "Release vx.y.z". At this point the CI will generate the docker image and push it to docker hub
+
+## Team
+
+* Christophe Prud’homme &lt;@prudhomm>
+* Javier Cladellas &lt;@JavierCladellas>
+* ...
