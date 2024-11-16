@@ -1,7 +1,7 @@
 site:
   title: Kub Hpda Ml
-  url: https://feelpp.github.io/kub-hpda-ml/
-  start_page: kub-hpda-ml::index.adoc
+  url: https://feelpp.github.io/hid-ai-hpda-ub/
+  start_page: hid-ai-hpda-ub::index.adoc
 content:
   sources:
   - url: .

@@ -1,17 +1,17 @@
 {
   "private": true,
-  "name": "kub-hpda-ml",
-  "description": "The Kub Hpda Ml documentation",
+  "name": "hid-ai-hpda-ub",
+  "description": "The HiDALGO2 AI HPDA documentation",
   "version": "0.1.1",
   "license": "AGPL-3.0",
-  "author": "The Kub HPDA ML Team",
-  "homepage": "https://github.com/feelpp/kub-hpda-ml#readme",
+  "author": "The HiDALGO2 AI HPDA Team",
+  "homepage": "https://github.com/feelpp/hid-ai-hpda-ub#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/feelpp/kub-hpda-ml.git"
+    "url": "git+https://github.com/feelpp/hid-ai-hpda-ub.git"
   },
   "bugs": {
-    "url": "https://github.com/feelpp/kub-hpda-ml/issues"
+    "url": "https://github.com/feelpp/hid-ai-hpda-ub/issues"
   },
   "contributors": [
     {

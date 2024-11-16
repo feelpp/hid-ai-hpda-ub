@@ -1,8 +1,8 @@
 :feelpp: Feel++
 :cpp: C++
-:project: kub-hpda-ml 
+:project: hid-ai-hpda-ub 
 
-= Ktirio Urban Building HPDA ML code 
+= Ktirio Urban Building AI HPDA code 
 
 == Setup Environment
 
@@ -15,7 +15,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ----
 
-The previous commands will create a virtual environment and install the required packages including the kub-hpda-ml package.
+The previous commands will create a virtual environment and install the required packages including the hid-ai-hpda-ub package.
 Once the installation is done, you can start using the package or run the notebooks in `src/notebooks/`.
 
 
@@ -42,7 +42,7 @@ This repository provides a basic starting point for a {feelpp} application inclu
 - [x] docker image generation for the project
 - [x] notebooks are in src/notebooks
 
-The documentation for kub-hpda-ml is available at link:https://feelpp.github.io/kub-hpda-ml[here] and you can build on it for your project by enabling the link:https://docs.github.com/en/pages[github pages] for your repository.
+The documentation for hid-ai-hpda-ub is available at link:https://feelpp.github.io/hid-ai-hpda-ub[here] and you can build on it for your project by enabling the link:https://docs.github.com/en/pages[github pages] for your repository.
 
 == Updating the {project} version
 
