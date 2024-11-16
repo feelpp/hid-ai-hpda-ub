@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Thermal fin :: Kub Hpda Ml</title>
-    <link rel="canonical" href="https://feelpp.github.io/kub-hpda-ml/kub-hpda-ml/examples/fin.html">
+    <link rel="canonical" href="https://feelpp.github.io/hid-ai-hpda-ub/hid-ai-hpda-ub/examples/fin.html">
     <meta name="description" content="We simulate the heat transfer in a thermal fin">
     <meta name="generator" content="Antora 3.1.8">
     <link rel="stylesheet" href="../../_/css/site.css">
@@ -102,7 +102,7 @@ MathJax.Hub.Config({
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-template-project" style="border-top: 4px solid #9E9E9E">
         <div class="navbar-brand">
             <div class="navbar-item feelpp-logo">
-                <a href="https://feelpp.github.io/kub-hpda-ml">Kub Hpda Ml</a>
+                <a href="https://feelpp.github.io/hid-ai-hpda-ub">Kub Hpda Ml</a>
             </div>
             <button class="navbar-burger" data-target="topbar-nav">
                 <span></span>
@@ -130,7 +130,7 @@ MathJax.Hub.Config({
 </header>
 <div class="body">
 <a href="#" class="menu-expand-toggle"></a>
-<div class="nav-container" data-component="kub-hpda-ml" data-version="">
+<div class="nav-container" data-component="hid-ai-hpda-ub" data-version="">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
@@ -213,7 +213,7 @@ MathJax.Hub.Config({
 </nav>
 
   
-    <div class="edit-this-page"><a href="https://github.com/feelpp/kub-hpda-ml/edit/master/docs/modules/ROOT/pages/examples/fin.adoc">Edit this Page</a></div>
+    <div class="edit-this-page"><a href="https://github.com/feelpp/hid-ai-hpda-ub/edit/master/docs/modules/ROOT/pages/examples/fin.adoc">Edit this Page</a></div>
   
   <div class="page-downloads">
   <span class="label">Download as</span>
@@ -329,12 +329,11 @@ e = feelpp.Environment(['fin'], config=feelpp.localRepository("."))</code></pre>
 <div class="content">
 <pre>---------------------------------------------------------------------------
 ModuleNotFoundError                       Traceback (most recent call last)
-<ipython-input-1-1d4b97f5aec6> in <module>
+File <ipython-input-1-1d4b97f5aec6>:2
       1 import feelpp
 ----> 2 from feelpp_project import laplacian
       3 import json
       4 import os
-      5
 
 ModuleNotFoundError: No module named 'feelpp_project'</pre>
 </div>
@@ -359,11 +358,10 @@ print(data)</code></pre>
 <div class="content">
 <pre>---------------------------------------------------------------------------
 AttributeError                            Traceback (most recent call last)
-<ipython-input-1-334c38b17d9d> in <module>
+File <ipython-input-1-334c38b17d9d>:1
 ----> 1 feelpp.Environment.setConfigFile(f"{d}/src/cases/laplacian/fin/fin1/fin2d.cfg")
       2 # Reading the JSON file
       3 data = laplacian.loadSpecs(f"{d}/src/cases/laplacian/fin/fin2d.json")
-      4 print(data)
 
 AttributeError: module 'feelpp' has no attribute 'Environment'</pre>
 </div>
@@ -388,11 +386,10 @@ meas=lap.measures()</code></pre>
 <div class="content">
 <pre>---------------------------------------------------------------------------
 NameError                                 Traceback (most recent call last)
-<ipython-input-1-d909663a9992> in <module>
+File <ipython-input-1-d909663a9992>:1
 ----> 1 lap = laplacian.get(dim=2, order=1)
       2 lap.setSpecs(data)
       3 lap.run()
-      4 meas=lap.measures()
 
 NameError: name 'laplacian' is not defined</pre>
 </div>
@@ -417,7 +414,7 @@ print(df.to_markdown())</code></pre>
 <div class="content">
 <pre>---------------------------------------------------------------------------
 NameError                                 Traceback (most recent call last)
-<ipython-input-1-d5bf1c958560> in <module>
+File <ipython-input-1-d5bf1c958560>:2
       1 import pandas as pd
 ----> 2 df = pd.DataFrame(meas)
       3 df.set_index('time', inplace=True)
